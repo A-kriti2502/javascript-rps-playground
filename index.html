@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <div class="mx-auto flex flex-col w-9/12 h-full justify-center items-center font-mono text-center rounded-lg p-8 space-y-4">
+        <h1 class="text-8xl mb-10 font-extrabold text-pink" >START THE GAME</h1>
+        <!-- user seclect -->
+        <div class="flex flex-row space-x-7 justify-center items-center">
+            <div class="relative h-40 w-60 text-center">
+                <p class="absolute top-1/2 left-0 w-full transform -translate-y-1/2 opacity-100 hover:opacity-0 transition-opacity duration-300 text-5xl text-yellow-600 font-extrabold " >PAPER</p>
+                <p class="absolute top-1/2 left-0 w-full transform -translate-y-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-5xl text-yellow-400 font-extrabold play" id="paper">PAPER</p>
+            </div>
+
+            <div class="relative h-40 w-60 text-center">
+                <p class="absolute top-1/2 left-0 w-full transform -translate-y-1/2 opacity-100 hover:opacity-0 transition-opacity duration-300 text-5xl text-red-600 font-extrabold " >SCISSORS</p>
+                <p class="absolute top-1/2 left-0 w-full transform -translate-y-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-5xl text-red-500 font-extrabold play" id="scissors">SCISSORS</p>
+            </div>
+
+            <div class="relative h-40 w-60 text-center">
+                <p class="absolute top-1/2 left-0 w-full transform -translate-y-1/2 opacity-100 hover:opacity-0 transition-opacity duration-300 text-5xl text-green-600 font-extrabold " >ROCK</p>
+                <p class="absolute top-1/2 left-0 w-full transform -translate-y-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-5xl text-green-400 font-extrabold play" id="rock">ROCK</p>
+            </div>
+        </div>
+
+        <!-- user display -->
+        <div class="space-x-2  flex flex-row" >
+            <!-- <div class="mt-4">you</div> -->
+            <div class="flex flex-row space-x-4 border-2  w-52 h-10 mt-3 mb-3" >
+                <div id="display-user" class="h-full w-2/4 p-1">You</div>
+                <div id="score-user" class="h-full w-2/4 p-1"></div>
+            </div>
+            <div class="flex flex-row space-x-4 border-2  w-52 h-10 mt-3 mb-3" >
+                <div id="display-computer" class="h-full w-2/4 p-1">Computer</div>
+                <div id="score-computer" class="h-full w-2/4 p-1"></div>
+            </div>
+            <!-- s<div class="mt-4">computer</div> -->
+        </div>
+        <!-- final display -->
+        <div class="h-14 w-1/6 mx-auto text-pink text-3xl font-bold" id="result-div"></div>
+        <!-- timer -->
+        <button id="button_restart" class="invisible cursor-pointer bg-pink text-white hover:text-gray-300 font-semibold py-2 px-4 border border-pink rounded shadow">
+            Restart
+        </button>
+        <p id="countdown" class="space-y-2 p-2 invisible h-13 w-40 "></p>
+    </div>
+    <div class="flex justify-between items-end">
+        <img src="./images/image1.svg" class="" srcset="">
+        <div class="text-center">© Aakriti Abhay Singh</div>
+        <img src="./images/image2.svg" class="" srcset="">
+    </div>
+    <!-- <div class="text-center">© Aakriti Abhay Singh</div> -->
+
+    <script src="app.js"></script>
+</body>
+</html>
